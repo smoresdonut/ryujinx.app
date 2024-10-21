@@ -5,12 +5,11 @@ import "../app.css";
 <svelte:head>
 	<meta name="description" content="">
 	<meta property="og:description" content="">
-    <link rel="icon" href="/static/favicon.png">
 </svelte:head>
 <slot></slot>
 <style>
     :global(:root) {
-        background-color: #1b1b1f;
+        background-color: #0d1117;
         --font-sans: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
         --font-serif: Georgia,Times,serif;
         --font-mono: Menlo,Courier,monospace;
