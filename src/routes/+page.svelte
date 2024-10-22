@@ -78,7 +78,7 @@
 					</div>
 				</div>
 			</div>
-		<div id="grow">
+		    <div class="grow">
 			<div class="overflow:hidden">
 				<div class="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
 					<div class="flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0 lg:space-x-20">
@@ -92,7 +92,7 @@
 						<div class="lg:w-7/12 xl:w-7/12 flex-none relative">
 						<div class="relative flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
 							<div class="md:w-1/2 md:mt-24 space-y-6">
-							<div class="group bg-[#131820] p-5 transition ease-out duration-200 border-2 border-gray-700 rounded-2xl hover:border-white-300">
+							<div class="group bg-[#131820] p-5 transition ease-out duration-200 border-2 border-gray-800 rounded-2xl hover:border-gray-700">
 								<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
 									<div class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-green-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"></div>
 									<div class="absolute inset-0 rounded-2xl transform -rotate-6 bg-green-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"></div>
@@ -102,11 +102,41 @@
 									6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"></path></svg>
 								</div>
 								<h4 class="text-lg text-white font-bold mb-2">Open Source</h4>
-								<p class="class=leading-relaxed text-gray-400">The source code of the emulator is available on <a class="text-blue-500" href="https://github.com/Ryujinxemu/Ryujinx">Github</a></p>
+								<p class="class=leading-relaxed text-gray-400">The source code of the emulator is available on <a class="text-blue-500" href="https://github.com/Ryujinxemu/Ryujinx">Github</a>.</p></div>
+								<div class="group bg-[#131820] p-5 transition ease-out duration-200 border-2 border-gray-800 rounded-2xl hover:border-gray-700">
+									<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
+										<div class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"></div>
+										<div class="absolute inset-0 rounded-2xl transform -rotate-6 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"></div>
+										<svg class="text-white relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+										<path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"></path></svg>
+								</div>
+								<h4 class="text-lg text-white font-bold mb-2">Cross-platform</h4>
+								<p class="class=leading-relaxed text-gray-400">Ryujinx is currently available for Windows 10/11, macOS and Linux-based systems.</p></div>
 							</div>
-						</div>
-						</div>
-						</div>
+							<div class="md:w-1/2 space-y-6">
+							<div class="group bg-[#131820] p-5 transition ease-out duration-200 border-2 border-gray-800 rounded-2xl hover:border-gray-700">
+								<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
+									<div class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-teal-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"></div>
+									<div class="absolute inset-0 rounded-2xl transform -rotate-6 bg-teal-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"></div>
+									<svg class="text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-solid hi-globe inline-block w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path></svg>
+								</div>
+								<h4 class="text-lg text-white font-bold mb-2">Compatibility</h4>
+								<p class="leading-relaxed text-gray-400">Ryujinx has been tested on over 4,050 titles, approximately 3,400 of those being considered playable.</p></div>
+							    <div class="group bg-[#131820] p-5 transition ease-out duration-200 border-2 border-gray-800 rounded-2xl hover:border-gray-700">
+								<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
+									<div class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-sky-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"></div>
+									<div class="absolute inset-0 rounded-2xl transform -rotate-6 bg-sky-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"></div>
+									<svg class="text-white relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+								</div>
+								<h4 class="text-lg text-white font-bold mb-2">Support</h4>
+								<p class="leading-relaxed text-gray-400">Discord server coming soon.</p></div></div></div></div></div></div></div>
+			<div class="name bg-gray-900">
+				<div class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+					<div class="text-center">
+						<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-white">Why the <span class="text-sky-500">name</span>?</h2>
+						<h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-200 lg:w-2/3 mx-auto">Pronounced <span class="italic">Ree-You-Jinx</span>. Based on the name "Ryujin", a mythical sea-god/dragon. The NX part of the name is from the Codename of the Switch itself.</h3>
 					</div>
 				</div>
 			</div>
