@@ -23,16 +23,16 @@ onMount(() => {
 
     switch (os) {
       case 'windows':
-        downloadLink = "/ryujinx-1.2.72-win_x64.zip";
+        downloadLink = "https://github.com/GreemDev/Ryujinx/releases/download/1.2.72/ryujinx-1.2.72-win_x64.zip";
         break;
       case 'mac':
-        downloadLink = "/ryujinx-1.2.72-macos_universal.app.tar.gz";
+        downloadLink = "https://github.com/GreemDev/Ryujinx/releases/download/1.2.72/ryujinx-1.2.72-macos_universal.app.tar.gz";
         break;
       case 'linux':
-        downloadLink = "/ryujinx-1.2.72-linux_x64.tar.gz";
+        downloadLink = "https://github.com/GreemDev/Ryujinx/releases/download/1.2.72/ryujinx-1.2.72-linux_x64.tar.gz";
         break;
       case 'arm64':
-        downloadLink = "/ryujinx-1.2.72-linux_arm64.tar.gz";
+        downloadLink = "https://github.com/GreemDev/Ryujinx/releases/download/1.2.72/ryujinx-1.2.72-linux_arm64.tar.gz";
         break;
     }
 
