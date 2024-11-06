@@ -19,3 +19,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Vitepress
+
+/src/routes/wiki/.vitepress/dist
+/src/routes/wiki/.vitepress/cache

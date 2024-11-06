@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{svelte,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+      'pattern': "url('/image.png')",
+      }
+    },
   },
   plugins: [],
 }

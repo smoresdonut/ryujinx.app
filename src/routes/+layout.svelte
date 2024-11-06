@@ -9,7 +9,7 @@ import "../app.css";
 <slot></slot>
 <style>
     :global(:root) {
-        background-color: #0d1117;
+        background-color: #070707;
         --font-sans: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
         --font-serif: Georgia,Times,serif;
         --font-mono: Menlo,Courier,monospace;
