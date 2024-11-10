@@ -1,5 +1,48 @@
 <script lang="ts">
-    import Footer from '$lib/components/footer/Footer.svelte'
+import Footer from '$lib/components/footer/Footer.svelte'
+import { onMount } from 'svelte';
+
+async function LatestRelease() {
+   const repoOwner = "Greemdev";
+   const repoName = "Ryujinx";
+
+const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`;
+
+try {
+ const response = await fetch(apiUrl);
+ const releaseData = await response.json();
+ const platform = navigator.userAgent.toLowerCase();
+
+ const downloadLink = releaseData.assets.find(asset => {
+   const name = asset.name.toLowerCase();
+     if (name.endsWith('.zip') && platform.includes('win')) {
+       return true;
+     } else if (name.endsWith('tar.gz') && platform.includes('macos')) {
+       return true;
+     } else if (name.endsWith('.tar.gz') && platform.includes('linux')) {
+       return true; 
+     } else if (name.endsWith('.tar.gz') && platform.includes('arm64')) {
+       return true;
+     }
+     return false;
+     })?.browser_download_url;
+
+   return downloadLink;
+   } catch (error) {
+     console.error("Error fetching the latest release data:", error);
+     return null;
+   }
+ }
+
+onMount(async () => {
+const downloadLink = await LatestRelease();
+
+if (downloadLink) {
+ window.location.href = downloadLink;
+} else {
+ console.log("No matching download link found");
+}
+});
 </script>
     <svelte:head>
         <title>Ryujinx - Nintendo Switch Emulator</title>
