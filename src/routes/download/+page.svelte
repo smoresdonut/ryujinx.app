@@ -55,17 +55,12 @@
                     </div>
                 </div>
             </header>
-            <div class="grow bg-white h-96">
+            <div class="grow bg-gray-100 h-[44rem]">
                 <div class="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 space-y-16">
                     <div class="text-center">
-                        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Latest <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-red-500">Downloads</span></h2>
-                        <div class="w-12 h-1.5 bg-gray-200 rounded-lg mb-3 mx-auto"></div>
-                        <h2 class="md:text-lg text-gray-400 md:leading-relaxed font-semibold lg:w-2/3 mx-auto">
-                        Don't forget to consult the <a class="text-sky-500 " href="https://wiki.ryujinx.app/setup"> setup guide</a>
-                        after installation
-                        </h2>
+                        <h2 class="text-2xl md:text-3xl font-extrabold mb-4">Downloading the latest release for your operating system</h2>
                     </div>
-                 </div>
+                </div>
             </div>
     <Footer></Footer> 
 </body>

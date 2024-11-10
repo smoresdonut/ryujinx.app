@@ -4,7 +4,7 @@
             <div class="text-gray-200"><span class="font-bold">Ryujinx © 2024</span></div>
             <nav class="space-x-3">
                 <a class="font-semibold text-gray-300 hover:text-white" href="/download"><span class="">Get started</span></a>
-                <a class="font-semibold text-gray-300 hover:text-white" href="/contribute"><span class="">Contribute</span></a>
+                <a class="font-semibold text-gray-300 hover:text-white" href="https://discord.gg/xNW747aN7S"><span class="">Contribute</span></a>
             </nav>
             <nav class="justify-center space-x-3">
             <a class="text-gray-300 hover:text-white" href="https://bsky.app/profile/ryujinx.app" target="_blank">

@@ -60,12 +60,12 @@
 						<span class="text-red-500">Nintendo Switch</span>
 						emulator
 					</h2>
-					<h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-300 lg:w-2/3 mx-auto">This Fork is intended to be a direct continuation of the project with a competent core team and help from dozens of contributors</h3>
+					<h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-300 lg:w-2/3 mx-auto">This Fork is intended to be a QoL uplift for existing Ryujinx users <br> This is not a revival project nor a phoenix project </h3>
 					<div class="flex flex-col sm:flex-row sm:items-center sm:justify-center space-y-2 sm:space-y-0 sm:space-x-2 pt-4 pb-16">
 						<a class="inline-flex justify-center items-center md:lg:space-x-2 border font-semibold focus:outline-none appearance-none px-3 py-2 leading-6 border-sky-500 bg-sky-500 text-white hover:text-white hover:bg-sky-700 hover:border-sky-700 focus:ring focus:ring-sky-700 focus:ring-opacity-50 active:bg-sky-700 active:border-sky-700 cursor-pointer rounded" href="/download" type="button">
 						<!---->
 						<span>Get Started</span></a>
-						<a class="inline-flex justify-center items-center md:lg:space-x-2 border font-semibold focus:outline-none appearance-none px-3 py-2 leading-6 border-red-500 bg-red-500 text-white hover:text-white hover:bg-red-700 hover:border-red-700 focus:ring focus:ring-red-500 focus:ring-opacity-50 active:bg-red-700 active:border-red-700 cursor-pointer rounded" href="/contribute" type="button">
+						<a class="inline-flex justify-center items-center md:lg:space-x-2 border font-semibold focus:outline-none appearance-none px-3 py-2 leading-6 border-red-500 bg-red-500 text-white hover:text-white hover:bg-red-700 hover:border-red-700 focus:ring focus:ring-red-500 focus:ring-opacity-50 active:bg-red-700 active:border-red-700 cursor-pointer rounded" href="https://discord.gg/xNW747aN7S" type="button">
 						<span>Contribute</span>
 						</a>
 					</div>
@@ -183,7 +183,7 @@
 										<div class="pattern-dots-md text-gray-300 absolute top-0 right-0 w-32 h-32 transform -translate-y-12 translate-x-12"></div>
 										<div class="pattern-dots-md text-gray-300 mb-32 absolute bottom-0 left-0 w-32 h-32 transform translate-y-12 -translate-x-12"></div>
 										<div class="grid grid-cols-1 sm:grid-cols-3 text-center rounded-xl shadow-md bg-gray-800 divide-y sm:divide-y-0 sm:divide-x divide-gray-600 overflow-hidden relative">
-											<div class="space-y-1 px-5 py-12"> <div class="text-4xl font-extrabold text-blue-400">3.7k+</div> <div class="text-sm text-white uppercase tracking-wide font-bold">Github Stars</div></div>
+											<div class="space-y-1 px-5 py-12"> <div class="text-4xl font-extrabold text-blue-400">4,3k+</div> <div class="text-sm text-white uppercase tracking-wide font-bold">Github Stars</div></div>
 											<div class="space-y-1 px-5 py-12"> <div class="text-4xl font-extrabold text-blue-400">3,550+</div> <div class="text-sm text-white uppercase tracking-wide font-bold">Playable Games</div></div>
 											<div class="space-y-1 px-5 py-12"> <div class="text-4xl font-extrabold text-blue-400">200+</div> <div class="text-sm text-white uppercase tracking-wide font-bold">Github Contributors</div></div>
 										</div>
