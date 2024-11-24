@@ -3,10 +3,9 @@ import Footer from '$lib/components/footer/Footer.svelte'
 import { onMount } from 'svelte';
 
 async function LatestRelease() {
-   const repoOwner = "Greemdev";
-   const repoName = "Ryujinx";
-
-const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`;
+  const repoOwner = "Greemdev";
+  const repoName = "Ryujinx";
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`;
 
 try {
  const response = await fetch(apiUrl);
@@ -15,14 +14,21 @@ try {
 
  const downloadLink = releaseData.assets.find(asset => {
    const name = asset.name.toLowerCase();
-     if (name.endsWith('.zip') && platform.includes('win')) {
+      // Windows
+      if (platform.includes('win') && name.endsWith('win_x64.zip')) {
        return true;
-     } else if (name.endsWith('tar.gz') && platform.includes('macos')) {
+      // MacOS
+     } else if (platform.includes('mac') && name.includes('macos_universal') && name.endsWith('.tar.gz')) {
        return true;
-     } else if (name.endsWith('.tar.gz') && platform.includes('linux')) {
-       return true; 
-     } else if (name.endsWith('.tar.gz') && platform.includes('arm64')) {
+      // Linux
+     } else if (platform.includes('linux') && !platform.includes('arm64') && name.includes('linux_x64') && name.endsWith('.tar.gz')) {
        return true;
+      // ARM64
+     } else if (platform.includes('linux') && platform.includes('arm64') && name.includes('linux_arm64') && name.endsWith('.tar.gz')) {
+       return true;
+      // Steamdeck
+     } else if (platform.includes('steamdeck') && name.includes('linux_x64') && name.endsWith('.tar.gz')) {
+      return true;
      }
      return false;
      })?.browser_download_url;
