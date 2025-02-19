@@ -1,0 +1,72 @@
+<section>
+    <div class="t">
+        <h2>Get In Touch</h2>
+        <p>
+            If you have something you'd like to contribute to the fork<br> need emulator support or just want to get in touch with the team<br> or contributors join the Discord.
+        </p>
+    </div>
+</section>
+<style lang="scss">
+    section {
+        max-width: 100vw;
+        overflow-x: hidden;
+        max-width: min(90vw, 1600px);
+        margin: 0 auto;
+        padding: 20rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            padding: 5rem 0;
+            max-width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .t {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            flex: 1;
+
+            @media (max-width: 768px) {
+                max-width: min(90vw, 1600px);
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #ffffff;
+                opacity: 0.8;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            gap: 2rem;
+
+            .t {
+                text-align: center;
+
+                h2 {
+                    font-size: 3rem;
+                    line-height: 1;
+                }
+            }
+
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 750;
+        margin: 0;
+        line-height: 1;
+        color: #ffffff;
+    }
+</style>

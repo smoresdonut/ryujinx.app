@@ -1,0 +1,78 @@
+<section>
+    <div class="open">
+        <h2>Open Source</h2>
+        <p>
+            Ryujinx is open source and is licensed under the MIT license.
+        </p>
+    </div>
+    </div>
+</section>
+<style lang="scss">
+    section {
+        z-index: 1;
+        max-width: 100vw;
+        overflow-x: hidden;
+        max-width: min(90vw, 1600px);
+        margin: 0 auto;
+        padding: 30rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .open {
+            z-index: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            flex: 1;
+
+            @media (max-width: 768px) {
+                max-width: min(90vw, 1600px);
+                margin: 0 auto;
+            }
+
+            p {
+                z-index: 1;
+                font-size: 1.5rem;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #ffffff;
+                opacity: 0.8;
+            }
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            gap: 2rem;
+
+            .open {
+                text-align: center;
+
+                h2 {
+                    font-size: 3rem;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1;
+        color: #ffffff;
+    }
+</style>

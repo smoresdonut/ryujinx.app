@@ -1,0 +1,194 @@
+---
+import Footer from "../../components/layout/footer.astro"
+import Navbar from "../../components/layout/navbar.astro"
+import MarketingLayout from "../../components/layout/marketing.astro"
+
+export const prerender = false;
+---
+
+<MarketingLayout
+title="Ryujinx - Donate"
+backgroundColor="#150E2A"
+>
+<Navbar />
+<div class="spacer"></div>
+<div class="lr-pad">
+    <div class="center">
+        <h1 class="main-heading">Donate</h1>
+        <p class="main-heading-sub">
+        Want to support the project? thats awesome, thank you for supporting us!<br />
+        </p>
+    </div>
+    <div class="tiles">
+    <div class="do-tile">
+        <div class="header">
+        <img src="https://avatars.githubusercontent.com/u/69540471?v=4" height="50" width="50" alt="donut">
+        <h2>Donut</h2>
+        <span class="role">Web developer</span>
+        </div>
+        <p class="description">
+            hi, im donut/claire<br><br>im a hobbyist web developer currently studying software development<br><br> i currently only develop the website ur currently on but plan on contributing to the emulator itself
+        </p>
+        <div class="grow"></div>
+        <div class="cta">
+            <a class="do-button primary" href="https://ko-fi.com/smoresdonut">
+            Donate
+        </a>
+        </div>
+    </div>
+    <div class="do-tile">
+        <div class="header">
+        <img src="https://avatars.githubusercontent.com/u/28578990?s=160&v=4" height="50" width="50" alt="greemdev">
+        <h2>Greemdev</h2>
+        <span class="role">Fork Maintainer</span>
+        </div>
+        <p class="description" style="font-weight: 500;">
+        Hey there,<br><br>
+        I'm GreemDev.<br><br>
+        I'm a 22 year old hobbyist .NET and JVM developer.<br><br>
+        My main projects are a fork of the discontinued Switch emulator <a href="https://github.com/Ryubing/Ryujinx" style="text-decoration: underline; color: #74b9ff">Ryujinx</a>, and the Discord bot <a href="https://github.com/Ryubing/Ryujinx" style="text-decoration: underline; color: #74b9ff">Volte</a>.
+        </p>
+        <div class="grow"></div>
+        <div class="cta">
+            <a class="do-button primary" href="https://github.com/sponsors/GreemDev">
+            Donate
+        </a>
+        </div>
+    </div>
+</div>
+</div>
+<Footer/>
+<style lang="scss">
+        .lr-pad {
+            max-width: min(130ch, 90vw);
+            margin: 0 auto;
+            padding-bottom: 50px;
+            display: grid;
+            gap: 4rem;
+            padding-bottom: 4rem;
+        }
+    
+        .spacer {
+            height: 12rem;
+        }
+    
+        .center {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .main-heading {
+            font-size: 4rem;
+            font-weight: 750;
+            color: white;
+            line-height: 1;
+        }
+    
+        .main-heading-sub {
+            font-size: 1.5rem;
+            color: white;
+            opacity: 0.7;
+            margin-bottom: 4rem;
+            line-height: 1.5;
+        }
+
+
+        .tiles {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .do-tile {
+        padding: 3rem;
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.082);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .grow {
+            flex-grow: 1;
+        }
+
+        .cta {
+            padding-top: 1rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+    }
+
+    .header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-direction: column;
+    }
+
+    .header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 530;
+        letter-spacing: 0.03em;
+        color: white;
+        margin: 0;
+    }
+
+    .role {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: -2px;
+}
+
+    .do-button {
+        padding: 0.9rem 1.5rem;
+        border-radius: 9999px;
+        font-size: 1rem;
+        font-weight: 550;
+        letter-spacing: 0.02em;
+        font-family: inherit;
+        cursor: pointer;
+        text-decoration: none;
+        transition:
+            background-color 0.2s,
+            filter 0.2s;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        background-color: rgb(255 255 255 / 10%);
+
+        &:hover {
+            background-color: rgb(255 255 255 / 20%);
+        }
+
+        &:active {
+            background-color: rgb(255 255 255 / 30%);
+        }
+
+        &.primary {
+            background: linear-gradient(180deg, #FF005C 0%, #9A0239 100%);
+
+            &:hover {
+                filter: brightness(1.1);
+            }
+
+            &:active {
+                filter: brightness(0.9);
+            }
+        }
+    }

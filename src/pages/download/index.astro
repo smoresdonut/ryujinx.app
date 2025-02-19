@@ -1,0 +1,153 @@
+---
+import DownloadTile from "../../components/downloadtile.astro"
+import Footer from "../../components/layout/footer.astro"
+import Cta from "../../components/cta.astro"
+import Navbar from "../../components/layout/navbar.astro"
+import MarketingLayout from "../../components/layout/marketing.astro"
+import Consts from "../../lib/consts"
+
+export const prerender = false;
+---
+
+<MarketingLayout
+title="Ryujinx - Download"
+backgroundColor="#150E2A"
+>
+<Navbar />
+<div class="spacer"></div>
+<div class="lr-pad">
+    <div class="center">
+        <h1 class="main-heading">Get Ryujinx</h1>
+        <p class="main-heading-sub">
+            Download Ryujinx for windows, macOS, linux, and linux arm<br />
+        </p>
+        <Cta isDownloadPage />
+    </div>
+    <div class="tiles">
+        <DownloadTile
+            name="Windows"
+            stores={[
+                {
+                    name: "Download",
+                    url: Consts.WINDOWS_URL,
+                    primary: true,
+                },
+            ]}
+        >
+            <p slot="description" class="description">
+                Available for Windows 10 and 11.
+            </p>
+        </DownloadTile>
+        <DownloadTile
+            name="macOS"
+            stores={[
+                {
+                    name: "Download",
+                    url: Consts.MACOS_URL,
+                    primary: true,
+                },
+            ]}
+        >
+            <p slot="description" class="description">
+                Apple Silicon and Intel Macs supported.
+            </p>
+        </DownloadTile>
+        <DownloadTile
+            name="Linux"
+            stores={[
+                {
+                    name: "Download",
+                    url: Consts.LINUX_URL,
+                    primary: true,
+                },
+                {
+                    name: "GitHub",
+                    url: Consts.GITHUB_URL,
+                    primary: false,
+                },
+            ]}
+        >
+            <p slot="description" class="description">
+                Available for most Linux distributions<br />
+                Appimage packages available on GitHub
+            </p>
+        </DownloadTile>
+        <DownloadTile
+            name="Linux ARM"
+            stores={[
+                {
+                    name: "Download",
+                    url: Consts.LINUXARM_URL,
+                    primary: true,
+                },
+            ]}
+        >
+            <p slot="description" class="description">
+                Download Ryujinx for ARM based operating systems
+            </p>
+        </DownloadTile>
+    </div>
+</div>
+<Footer />
+</MarketingLayout>
+<style lang="scss">
+    .lr-pad {
+        max-width: min(130ch, 90vw);
+        margin: 0 auto;
+        display: grid;
+        gap: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .spacer {
+        height: 12rem;
+    }
+
+    .center {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main-heading {
+        font-size: 4rem;
+        font-weight: 750;
+        color: white;
+        line-height: 1;
+    }
+
+    .main-heading-sub {
+        font-size: 1.5rem;
+        color: white;
+        opacity: 0.7;
+        margin-bottom: 4rem;
+        line-height: 1.5;
+    }
+
+    .tiles {
+        display: grid;
+        gap: 2rem;
+        // Max 2 columns, 1 if space is too small
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    code {
+        font-size: 0.9em;
+        font-family: var(--typeface-mono);
+        background-color: rgb(255 255 255 / 10%);
+        padding: 0.1em 0.3em;
+        border-radius: 0.2em;
+        vertical-align: middle;
+    }
+
+    .description {
+        font-size: 1rem;
+        color: white;
+        opacity: 0.7;
+        line-height: 1.5;
+    }
+</style>

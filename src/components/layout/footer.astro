@@ -1,0 +1,131 @@
+---
+import wordmark from "../../assets/wordmark.svg"
+import "./styleconstants.astro"
+---
+
+<footer>
+    <div class="copyright-section">
+        <a href="/"> <img src={wordmark.src} alt="Ryujinx" draggable="false" class="wordmark" /></a>
+        <div class="copyright">
+            © {new Date().getFullYear()}
+        </div>
+    </div>
+    <div class="links-section">
+        <div class="links">
+            <span>Get Started</span>
+            <a href="/download">Download</a>
+        </div>
+        <div class="links">
+            <span>Wiki</span>
+            <a href="https://github.com/Ryubing/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide" target="_blank">Setup Guide</a>
+        </div>
+        <div class="links socials">
+            <span>Socials</span>
+            <a href="https://discord.gg/ryujinx">
+                Discord
+            </a>
+            <a href="https://bsky.app/profile/ryujinx.app">
+                Bluesky
+            </a>
+            <a href="https://github.com/Ryubing/Ryujinx">
+                GitHub
+            </a>
+        </div>
+    </div>
+</footer>
+
+<style lang="scss">
+    footer {
+        color: white;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        padding: 5rem 10rem;
+        border-top: 2px solid;
+        transition:
+            padding 0.5s var(--easing),
+            flex-direction 0.5s var(--easing);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media (max-width: 1600px) {
+            padding: 5rem 2rem;
+        }
+        @media (max-width: 1350px) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .copyright-section {
+            .wordmark {
+                width: 140px;
+                height: auto;
+            }
+
+            .copyright {
+                font-size: 0.9rem;
+                margin-top: 1rem;
+                opacity: 0.75;
+            }
+        }
+
+        .links-section {
+            display: flex;
+            flex-direction: row;
+            padding-right: 45rem;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 2.5rem;
+
+            @media (max-width: 1350px) {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .links > span {
+                    font-weight: 800 !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+
+                span {
+                    transition:
+                        margin-bottom 0.2s var(--easing),
+                        font-weight 0.2s var(--easing);
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                .img {
+                    display: inline-block;
+                }
+
+                a:link,
+                a:visited {
+                    color: white;
+                    transition:
+                        opacity 0.2s var(--easing),
+                        filter 0.2s var(--easing);
+                    text-decoration: none;
+
+                    &:hover {
+                     color: #FF005C;
+                    }
+                }
+            }
+        }
+    }
+</style>
