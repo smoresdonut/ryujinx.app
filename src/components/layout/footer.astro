@@ -62,9 +62,25 @@ import "./styleconstants.astro"
 
         .copyright-section {
             .wordmark {
-                width: 140px;
-                height: auto;
+            width: 50%;
+            max-width: 250px;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .wordmark {
+                width: 70%;
+                max-width: 200px;
             }
+        }
+
+        @media (max-width: 480px) {
+            .wordmark {
+                width: 70%;
+                max-width: 200px;
+            }
+        }
 
             .copyright {
                 font-size: 0.9rem;

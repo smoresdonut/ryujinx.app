@@ -1,13 +1,6 @@
 ---
 import StyleConstants from "./styleconstants.astro"
 
-interface Props {
-    title: string
-    backgroundColor?: string
-    foregroundColor?: string
-}
-
-const { title, backgroundColor } = Astro.props
 ---
 
 <!doctype html>
@@ -15,22 +8,23 @@ const { title, backgroundColor } = Astro.props
     <head>
         <meta charset="UTF-8" />
         <meta
-            name="description"content="Ryubing/Ryujinx is a fork of the discontinued Switch emulator witten in C#!"/>
+            name="description"content="Ryubing/Ryujinx is a fork of the discontinued Nintendo Switch emulator, written in C#. It offers excellent accuracy, high performance, a user-friendly interface, and consistent builds."/>
         <meta name="keywords" content="Ryujinx, switch emulator, fork, emulator, switch, ryubing, ldn, open-source"/>
         <meta name="author" content="Ryujinx" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
         <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
         <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
+        <title>Ryujinx - Nintendo Switch Emulator</title>
         <StyleConstants />
     </head>
     <body>
         <slot />
     </body>
 </html>
-<style is:global define:vars={{ backgroundColor }}>
+<style is:global>
     body {
-        max-width: 100vw;
+        max-width: 100%;
         overflow-x: hidden;
         margin: 0;
         padding: 0;
