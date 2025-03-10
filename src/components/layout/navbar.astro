@@ -8,7 +8,7 @@ import "./styleconstants.astro"
 <nav class="site-navbar">
     <div class="nav-inner">
         <a href="/">
-            <img src={wordmark.src} width="100px" height="50px" font-weight="750" alt="Ryujinx" class="wordmark" />
+            <img src={wordmark.src} font-weight="750" alt="Ryujinx" class="wordmark" />
         </a>
         <div class="links desktop">
             <NavLinks />
@@ -60,24 +60,10 @@ import "./styleconstants.astro"
         }
 
         .wordmark {
-            width: 50%;
+            width: 140px;
             max-width: 250px;
             height: auto;
             display: block;
-        }
-
-        @media (max-width: 768px) {
-            .wordmark {
-                width: 70%;
-                max-width: 200px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .wordmark {
-                width: 70%;
-                max-width: 200px;
-            }
         }
 
         .mobile > button {
