@@ -1,0 +1,26 @@
+name: fetch releases
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  fetch-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: install dependencies
+      run: |
+        npm install
+    
+    - name: run fetchreleases
+      run: |
+        npx tsx src/lib/fetchReleases.ts

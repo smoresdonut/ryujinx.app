@@ -4,7 +4,7 @@ import path from "path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const GITHUB_REPO = "Ryubing/Ryujinx";
+const GITHUB_REPO = "Ryubing/Stable-Releases";
 const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/releases/latest`;
 
 interface ReleaseAsset {
@@ -29,6 +29,7 @@ async function fetchLatestRelease() {
             MACOS_URL: assets.find(asset => asset.name.includes("macos_universal.app.tar.gz"))?.browser_download_url || "",
             LINUX_URL: assets.find(asset => asset.name.includes("linux_x64.tar.gz"))?.browser_download_url || "",
             LINUXARM_URL: assets.find(asset => asset.name.includes("linux_arm64.tar.gz"))?.browser_download_url || "",
+            GITHUB_URL: "https://github.com/Ryubing/Stable-Releases/releases/"
         };
 
         // update Consts class
@@ -37,6 +38,7 @@ async function fetchLatestRelease() {
     static readonly MACOS_URL = "${downloads.MACOS_URL}" as const;
     static readonly LINUX_URL = "${downloads.LINUX_URL}" as const;
     static readonly LINUXARM_URL = "${downloads.LINUXARM_URL}" as const;
+    static readonly GITHUB_URL = "${downloads.GITHUB_URL}" as const;
 }`;
 
 fs.writeFileSync(path.join(__dirname, "../lib/consts.ts"), constsContent);
