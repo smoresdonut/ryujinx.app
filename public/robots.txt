@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+
 Sitemap: https://ryujinx.app/sitemap-index.xml
